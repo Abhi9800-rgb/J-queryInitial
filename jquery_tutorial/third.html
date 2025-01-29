@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="box" class="test">
+    <h2>Test Box</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ipsa animi tempore provident adipisci ducimus natus placeat, rem voluptatum ullam voluptatem error exercitationem magni quasi hic inventore sed harum iste.</p>
+   </div>
+<ul id="list">
+    <li>Orange</li>
+    <li>Grapes</li>
+    <li class="test">Banana</li>
+    <li class="test">Guava</li>
+</ul>
+<script src="../jquery.js">
+
+</script>
+
+<script>
+    $(document).ready(function(){
+$("#list").css("color","red");
+$("#list li").css("border","2px dotted blue");
+
+$(".test").css("border","2px solid blue");
+$("#box").css("border", "1px solid green");
+    });
+</script>
+
+</body>
+</html>

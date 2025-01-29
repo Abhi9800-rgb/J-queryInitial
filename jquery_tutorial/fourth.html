@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testing</h1>
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur est animi quia eveniet perspiciatis distinctio provident impedit reprehenderit blanditiis! Rerum ipsa unde, atque suscipit veniam odit ea ut? Temporibus, tempora?</p>
+
+    </div>
+
+    <script src="../jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('#box').click(function(){
+            $('#box').css('background-color', 'pink');
+          }); 
+          
+          $('#box').dblclick(function(){
+            $('#box').css('background-color', 'green');
+          }); 
+          $('#box').contextmenu(function(){
+            $('#box').css('background-color', 'blue');
+          }); 
+
+          $('#box').mouseenter(function(){
+            $('#box').css('background-color', 'tan');
+          }); 
+          $('#box').mouseleave(function(){
+            $('#box').css('background-color', 'brown');
+          }); 
+        })
+
+    </script>
+</body>
+</html>
